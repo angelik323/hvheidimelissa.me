@@ -764,7 +764,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formsubmit.co/d1e531ccf8087bcc660bf31c882080a4" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
@@ -784,9 +784,11 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje ha sido enviado. Gracias, Feliz día!</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              <div class="text-center"><button type="submit" name="enviar">Enviar Mensaje</button></div>
             </form>
-
+            <?php
+            include("eviar.php");
+            ?>
           </div>
 
         </div>
@@ -833,7 +835,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
